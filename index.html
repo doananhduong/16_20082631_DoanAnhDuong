@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-12">
+            <header>
+                <img src="./image/logo.PNG" alt="">
+                <h3>ĐOÀN THANH NIÊN THÀNH PHỐ HỒ CHÍ MINH</h3>
+                <h4>ĐOÀN THANH NIÊN TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP THÀNH PHỐ HỒ CHÍ MINH</h4>
+            </header>
+        </div>
+        <div class="col-md-12">
+            <nav class="navbar-collapse">
+                <ul class="navbar-nav nav">
+                    <li class="nav-item"><a href="#">TRANG CHỦ</a></li>
+                    <li class="nav-item"><a href="#">ĐOÀN THỂ</a></li>
+                    <li class="nav-item"><a href="#">SỰ KIỆN</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbardrop" href="#" data-toggle="dropdown">HOẠT ĐỘNG</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#" id="myBtn">ĐĂNG KÝ</a>
+                            <a class="dropdown-item" href="#" id="dn">THAM GIA</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-md-12">
+            <img src="./image/ngayhoithanhnien.JPG" alt="">
+        </div>
+        <div class="col-md-12">
+            <section class="table-responsive">
+                <table class="table table-striped">
+                    <caption>DANH SÁCH ĐĂNG KÝ HOẠT ĐỘNG MÙA HÈ XANH</caption>
+                
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>MSV</th>
+                        <th>TENSV</th>
+                        <th>Ngày tham gia</th>
+                        <th>Email</th>
+                        <th>SDT</th>
+                    </tr>
+                    <tbody></tbody>
+                </thead>
+                </table>
+            </section>
+        </div>
+        <div class="col-md-12">
+            <footer>2020-2021 Đoàn Thanh Niên-Trường đại học Công Nhiệp TP.Hồ Chí Minh</footer>
+        </div>
+        <div class="modal fade" role="dialog" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 style="text-align:center">THÔNG TIN ĐĂNG KÝ</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" role="form" class="form-horizontal">
+                            <div class="form-group">
+                                <label for="txtMa" class="control-label col-xs-3">Ma Sinh Vien</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="" id="txtMa" placeholder="Mã Sinh Viên">
+                                    <span class="text-danger" id="tbMa">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtTen" class="control-label col-xs-3">Ho ten </label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="" id="txtTen" placeholder="Ho ten">
+                                    <span class="text-danger" id="tbTen">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtNgay" class="control-label col-xs-3">Ngay Tham Gia</label>
+                                <div class="col-md-9">
+                                    <input type="date" class="form-control" name="" id="txtNgay" placeholder="Ngay tham gia">
+                                    <span class="text-danger" id="tbNgay">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtEmail" class="control-label col-xs-3">Email </label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="" id="txtEmail" placeholder="Email">
+                                    <span class="text-danger" id="tbEmail">*</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtSDT" class="control-label col-xs-3">SDT </label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" name="" id="txtSDT" placeholder="SDT">
+                                    <span class="text-danger" id="tbSDT">*</span>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-success btn-block" id="btnSave">Lưu</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
